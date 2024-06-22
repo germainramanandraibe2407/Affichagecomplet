@@ -1,0 +1,30 @@
+.achieved-goal {
+    position: fixed;
+    top: -0.5%;
+    left: -0.5%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   
+  }
+  
+  .achieved-goal h2 {
+    text-align: center;
+  }
+  
+  .achieved-goal audio {
+    display: none;
+  }
+
+  .firework-text {
+    background-color: #b43131;
+    position: absolute;
+   
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgb(145, 17, 17);
+    font-weight: bold;
+    text-align: center;
+  }

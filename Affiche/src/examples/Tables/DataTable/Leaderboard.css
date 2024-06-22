@@ -1,0 +1,56 @@
+.leaderboard {
+  
+ 
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  background-color: #000131fb;
+ 
+}
+
+.leaderboard th,
+.leaderboard td{
+  background-position: center;
+  border: 5px solid rgba(255, 255, 255, 0.062) ;
+  padding: 8px;
+  text-align: center;
+  color: #000000c9;
+  color: #ffffff;
+  border-radius: 10px;
+  font-family:serif;
+}
+
+
+.succes{
+  background-color: #0e7c00cb !important;
+  background-position: center;
+  text-align: center;
+}
+
+.normal{
+  background-color: #4e9200 !important;
+  background-position: center;
+  text-align: center;
+}
+.echec{
+  background-color: #ff080054 !important;
+  background-position: center;
+  text-align: center;
+}
+
+.leaderboard th {
+  border-radius: 0%;
+  color: #ffffff;
+  background-color: #060aff;
+  font-weight: 100px !important;
+  font-size: larger;
+}
+
+
+
+
+
+.leaderboard td:first-child {
+  
+}
+

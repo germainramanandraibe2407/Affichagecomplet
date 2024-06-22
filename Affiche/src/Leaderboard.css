@@ -1,0 +1,235 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.body{
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #4C0033, #8B0000); /* Dégradé en grenat */
+  
+}
+.titre{
+
+  position:absolute;
+  height: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 0px;
+  background-color: #fafafa00;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.entete{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 70vw;
+  height: 20%;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.box {
+  color: #ffffff;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(43, 43, 61, 0.7); /* Fond semi-transparent */
+  border: 1px solid #cccccc69;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.box .profile-pic1 {
+  background-image: url('assets/images/2.png');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.profile-pic2 {
+  background-image: url('assets/images/1.png');
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.profile-pic3 {
+  background-image: url('assets/images/3.png');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.box .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.box .achievement {
+  font-size: 14px;
+  color: #777;
+}
+.box1{
+  height: 60% !important;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.box2{
+  height: 90% !important;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+
+.box3 {
+  height: 60% !important;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.smaller-box {
+  height: 130px;
+}
+
+
+.leaderboard {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  margin-top: 0.1%;
+  border-radius: 20px;
+  width: 95vw;
+  height: 70%;
+  border-spacing:  0 5px;
+  padding: 20px;
+  
+}
+.show{
+
+  
+  opacity: 1;
+}
+.show1{
+  position:fixed ;
+  opacity: 0;
+}
+
+.leaderboard.show1 {
+  
+  position:relative;
+  opacity: 1;
+}
+
+.leaderboard th:first-child,
+.leaderboard td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.leaderboard th:last-child,
+.leaderboard td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.leaderboard th,
+.leaderboard td{
+  background-position: center;
+
+  padding: 5px;
+  text-align: center;
+  color: #838488;
+  font-weight:400;
+  font-size:40px;
+  font-family:serif;
+  
+
+  ;
+}
+
+
+.leaderboard tr{
+  height: 75px;
+  background-color: rgba(35, 35, 52, 0.5); /* Fond transparent */
+  border: 2px solid #232334; /* Bordure */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.succes{
+  color: #333;
+  background-color: #1cee00cb !important;
+  background-position: center;
+  text-align: center;
+}
+.normalsucces{
+  background-color: #4e920175 !important;
+  background-position: center;
+  text-align: center;
+}
+.normal{
+  background-color: #34fa0227 !important;
+  background-position: center;
+  text-align: center;
+}
+.echec{
+  background-color: #ff080054 !important;
+  background-position: center;
+  text-align: center;
+}
+.leaderboard th {
+ 
+  color: #ffffff;
+  background-color: rgba(2, 2, 71, 0.7); /* Fond semi-transparent */
+  font-weight: 100px !important;
+  font-size: larger;
+}
+.rang2 div{
+  height:100%;
+  width: 33.3%;
+  background-color: #b8c2d1;
+
+
+}
+
+
+.achieved-goal {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.achieved-goal h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.achieved-goal:hover {
+  transform: scale(1.1);
+}
