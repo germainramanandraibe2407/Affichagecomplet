@@ -34,29 +34,16 @@ app.get('/', function(req, res) {
 const personneRoutes = require('./routes/personne');
 app.use('/api/personne', personneRoutes);
 
-// Routes pour l'API d ajout materiel
-const ajoutMaterielRoutes = require('./routes/ajoutmateriels');
-app.use('/api/ajoutmateriel', ajoutMaterielRoutes);
 
-
- // Routes pour l'API de signup
-const signUpRoutes = require('./routes/signup');
-app.use('/api/signup', signUpRoutes);
-
-// Routes pour l'API de login
-const AfficheUserRoutes = require('./routes/AfficheUser');
-app.use('/api/AfficheUser', AfficheUserRoutes);
-
-// Routes pour l'API de login
-const loginRoutes = require('./routes/login');
-app.use('/api/login', loginRoutes);
-
-// Routes pour l'API de mouvement de sortie
 const productivitéRoutes = require('./routes/productivite');
 app.use('/api/productivite', productivitéRoutes);  
 
+
+const produitsRoutes = require('./routes/produits');
+app.use('/api/produits', produitsRoutes);  
+
   // Démarrage du serveur
-  const PORT = 3005; // Choisissez le port que vous souhaitez utiliser
+  const PORT = 9000; // Choisissez le port que vous souhaitez utiliser
 
   app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);

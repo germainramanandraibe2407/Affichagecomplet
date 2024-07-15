@@ -1,2 +1,4 @@
-const API_IP = '192.168.88.102';
+const API_IP = '109.199.105.90';
 export default API_IP;
+
+

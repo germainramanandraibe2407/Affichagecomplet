@@ -5,47 +5,45 @@ html, body {
   width: 100%;
   overflow: hidden;
 }
-.body{
+
+.body {
   display: flex; 
   align-items: center;
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, #4C0033, #8B0000); /* Dégradé en grenat */
-  
+  background-color: #ffffff !important; /* Fond blanc */
 }
-.titre{
-
-  position:absolute;
+.titre {
+  position: absolute;
   height: 10%;
-  font-size: 24px;
+  font-size: 44px;
   font-weight: bold;
-  color: #ffffff;
+  color: #0b0233; /* Couleur ajustée pour contraster avec le fond blanc */
   padding: 10px 0px;
-  background-color: #fafafa00;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.entete{
+
+.entete {
   padding-top: 80px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 70vw;
   height: 20%;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
 }
 
-
 .box {
-  color: #ffffff;
+  color: #ffffff; /* Couleur du texte ajustée pour le fond semi-transparent */
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(43, 43, 61, 0.7); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 32, 0.938); /* Fond semi-transparent */
   border: 1px solid #cccccc69;
   border-radius: 10px;
   padding: 20px;
@@ -62,6 +60,7 @@ html, body {
   background-position: center;
   margin-bottom: 10px;
 }
+
 .profile-pic2 {
   background-image: url('assets/images/1.png');
   width: 100px;
@@ -71,6 +70,7 @@ html, body {
   background-position: center;
   margin-bottom: 10px;
 }
+
 .profile-pic3 {
   background-image: url('assets/images/3.png');
   width: 50px;
@@ -80,27 +80,29 @@ html, body {
   background-position: center;
   margin-bottom: 10px;
 }
+
 .box .name {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .box .achievement {
-  font-size: 14px;
-  color: #777;
+  font-size: 20px;
+  color: #ffffff;
 }
-.box1{
+
+.box1 {
   height: 60% !important;
   transform: scale(1.1);
   font-weight: bold;
 }
-.box2{
+
+.box2 {
   height: 90% !important;
   transform: scale(1.1);
   font-weight: bold;
 }
-
 
 .box3 {
   height: 60% !important;
@@ -112,31 +114,28 @@ html, body {
   height: 130px;
 }
 
-
 .leaderboard {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
   margin-top: 0.1%;
   border-radius: 20px;
   width: 95vw;
-  height: 70%;
-  border-spacing:  0 5px;
+  border-spacing: 0 5px;
   padding: 20px;
-  
+  table-layout: fixed;
 }
-.show{
 
-  
+.show {
   opacity: 1;
 }
-.show1{
-  position:fixed ;
+
+.show1 {
+  position: fixed;
   opacity: 0;
 }
 
 .leaderboard.show1 {
-  
-  position:relative;
+  position: relative;
   opacity: 1;
 }
 
@@ -152,68 +151,81 @@ html, body {
   border-bottom-right-radius: 10px;
 }
 
-
-.leaderboard th,
-.leaderboard td{
-  background-position: center;
-
-  padding: 5px;
-  text-align: center;
-  color: #838488;
-  font-weight:400;
-  font-size:40px;
-  font-family:serif;
-  
-
-  ;
+.leaderboard tr:nth-child(even) {
+  background-color: #ffffff; /* Couleur de fond pour lignes paires */
 }
 
+.leaderboard t:nth-child(odd) {
+  background-color: #fffffff3; /* Couleur de fond pour lignes impaires */
+}
 
-.leaderboard tr{
-  height: 75px;
-  background-color: rgba(35, 35, 52, 0.5); /* Fond transparent */
-  border: 2px solid #232334; /* Bordure */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+.leaderboard th,
+.leaderboard td {
+  height: 50px;
+  background-position: center;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  color: #000000; /* Couleur du texte ajustée pour contraster */
+  font-weight: 400;
+  font-size: 40px;
+  font-family: serif;
+}
+
+.leaderboard tr {
+  height: 80px; /* Hauteur fixe des lignes tr*/
+  position: sticky;
+  background-color: rgba(116, 116, 117, 0.589); /* Fond transparent */
+  border: 2px solid #010120; /* Bordure */
   border-radius: 10px; /* Coins arrondis */
 }
 
-.succes{
-  color: #333;
-  background-color: #1cee00cb !important;
+.succes {
+  color: #ffffff !important;
+  background-color: #175732 !important;
   background-position: center;
   text-align: center;
 }
-.normalsucces{
-  background-color: #4e920175 !important;
+
+.normalsucces {
+  color: #ffffff !important;
+  background-color: #006400!important;
   background-position: center;
   text-align: center;
 }
-.normal{
-  background-color: #34fa0227 !important;
+
+.normal {
+  color: #ffffff !important;
+  background-color: #149414 !important;
   background-position: center;
   text-align: center;
 }
-.echec{
-  background-color: #ff080054 !important;
+
+.echec2 {
+  color: #ffffff !important;
+  background-color: #C72C48 !important;
+  background-position: center;
+  text-align: center;
+}
+
+.echec {
+  color: #ffffff !important;
+  background-color: #DE2916 !important;
   background-position: center;
   text-align: center;
 }
 .leaderboard th {
- 
   color: #ffffff;
-  background-color: rgba(2, 2, 71, 0.7); /* Fond semi-transparent */
+  background-color: rgba(1, 1, 32, 0.938); /* Fond semi-transparent */
   font-weight: 100px !important;
   font-size: larger;
+  text-transform: uppercase; /* Mettre en majuscule */
 }
-.rang2 div{
-  height:100%;
+.rang2 div {
+  height: 100%;
   width: 33.3%;
   background-color: #b8c2d1;
-
-
 }
-
-
 .achieved-goal {
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -232,4 +244,75 @@ html, body {
 
 .achieved-goal:hover {
   transform: scale(1.1);
+}
+
+body tr {
+  height: 2px;
+}
+
+tr.show-0,
+tr.show-1,
+tr.show-2 {
+  animation: fadeIn 0.5s ease-in-out 0s !important;
+  
+  
+}
+
+tr.show-3,
+tr.show-4,
+tr.show-5 {
+  animation: fadeIn 0.5s ease-in-out 0s !important;
+ 
+ 
+}
+
+tr.show-6,
+tr.show-7,
+tr.show-8 {
+  animation: fadeIn 0.5s ease-in-out 0s !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  position: fixed; /* Position fixe pour maintenir le footer en bas de la page */
+  bottom: 0; /* Alignement en bas */
+  left: 0; /* Alignement à gauche */
+  width: 100%; /* Largeur maximale */
+  background-color: #ffffff; /* Fond blanc */
+  color: #01002c; /* Texte noir */
+  text-align: center; /* Centrer le contenu */
+  padding: 10px 0; /* Espacement intérieur */
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* Ombre sous le footer */
+  font-size: 50px;
+}
+
+
+.scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding-left: 100%; /* Commence hors de l'écran */
+  animation: scroll-left 20s linear infinite; /* Réglage de la durée de l'animation */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Commence à droite */
+  }
+  100% {
+    transform: translateX(-100%); /* Se termine à gauche */
+  }
 }

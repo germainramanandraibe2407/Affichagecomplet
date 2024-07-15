@@ -119,7 +119,7 @@ router.post('/delete', function(req, res) {
         console.log(err);
         return;
       }
-      res.status(201).json({ message: 'Supression de la personne effectuée avec succès' });
+      else res.status(201).json({ message: 'Supression de la personne effectuée avec succès' });
     });
   }); 
 
